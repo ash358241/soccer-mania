@@ -40,6 +40,7 @@ const TeamDetails = () => {
     strYoutube,
     strWebsite,
   } = team;
+
   let playerImg;
   if (strGender === "Male") {
     playerImg = <img style={{ width: "100%" }} src={malePlayerImg} alt="" />;
@@ -60,7 +61,7 @@ const TeamDetails = () => {
           <br/>
           <br/>
         <div className="teamContainer">
-            <div className="teamInfo">
+            <div className="teamInfo px-2">
             <h3>{strTeam}</h3>
             <p>
             <FontAwesomeIcon icon={faHistory} /> Founded: {intFormedYear}
@@ -75,7 +76,7 @@ const TeamDetails = () => {
             <FontAwesomeIcon icon={faMars} /> Gender: {strGender}
             </p>
             </div>
-            <div className="teamPlayerImg">{playerImg}</div>
+            <div className="teamPlayerImg px-2">{playerImg}</div>
         </div>
         <br/>
         <br/>

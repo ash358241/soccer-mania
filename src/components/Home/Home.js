@@ -20,7 +20,7 @@ const Home = () => {
             </div>
             </div>
 
-        <div className="teamsContainer">
+        <div className="teamsContainer text-center">
             {
                 teams.map(team => <Team team={team} key={team.idTeam}></Team>)
             }
