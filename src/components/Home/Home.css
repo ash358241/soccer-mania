@@ -1,0 +1,50 @@
+.mainDiv{
+    margin-bottom: 20px;
+    background-color: snow;
+}
+
+.teamsContainer{
+    display: grid;
+    grid-template-columns: repeat(3, .5fr);
+    width: 80%;
+    place-items: center;
+    grid-gap:50px;
+    margin: 0 auto;
+
+}
+
+.bannerImg{
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.bannerImg img{
+    width: 100%;
+    height: 400px;
+    opacity: 0.8;
+}
+
+.bannerText{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing:5px;
+}
+
+@media (max-width: 992px){
+    .teamsContainer{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 668px){
+    .teamsContainer{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
