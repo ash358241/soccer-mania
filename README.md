@@ -1,6 +1,8 @@
 # `Soccer Mania`
 
 ## The project is about exploring details about teams which are playing in the league.
+
+[Live-Site](https://pensive-feynman-ecf848.netlify.app/)
 ### Information you will get about respective team are: 
 1. Team banner with team's logo included.
 2. Team name, founded year, country, sport type and gender. According to gender you will see the picture of players.
