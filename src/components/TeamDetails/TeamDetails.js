@@ -24,7 +24,7 @@ const TeamDetails = () => {
     const url = `https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=${id}`;
     fetch(url)
       .then((res) => res.json())
-      .then((data) => setTeam(data.teams[0]));
+      .then((data) => setTeam(data.teams));
   }, [id]);
   const {
     strStadiumThumb,
@@ -39,7 +39,7 @@ const TeamDetails = () => {
     strTwitter,
     strYoutube,
     strWebsite,
-  } = team;
+  } = team[0] || {};
 
   let playerImg;
   if (strGender === "Male") {
@@ -47,6 +47,10 @@ const TeamDetails = () => {
   } else if (strGender === "Female") {
     playerImg = <img style={{ width: "100%" }} src={femalePlayerImg} alt="" />;
   }
+  else{
+    playerImg = <img style={{ width: "100%" }} src={femalePlayerImg} alt="" />;
+  }
+  
 
   return (
     <div className="teamDiv">
